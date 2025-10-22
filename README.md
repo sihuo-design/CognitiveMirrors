@@ -1,6 +1,7 @@
 # CognitiveMirrors
 The official code of "Cognitive Mirrors: Exploring the Diverse Functional Roles of Attention Heads in LLM Reasoning".
 
+![download](https://github.com/user-attachments/assets/3d45c7a8-c60f-4e17-9f23-882e008650ab)
 Cognitive Mirrors investigates the functional diversity of attention heads in large language models (LLMs).
 
 1. Environment Setup
