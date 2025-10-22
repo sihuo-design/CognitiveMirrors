@@ -14,7 +14,7 @@ Run python get_activations.py --mode test
 
 3. Probing
 
-Run get_topk_tokens_by_answer.py to get the activations of top-k meaningful tokens from generated answer.
+Run python get_topk_tokens_by_answer.py to get the activations of top-k meaningful tokens from generated answer.
 
 Run python get_importance.py
 
