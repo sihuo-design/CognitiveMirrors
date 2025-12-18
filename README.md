@@ -2,7 +2,7 @@
 
 **Cognitive Mirrors** is the official codebase for **“Cognitive Mirrors: Exploring the Diverse Functional Roles of Attention Heads in LLM Reasoning.”**
 
-![Overview of Cognitive Mirrors](assets/overview.png)
+![Overview of Cognitive Mirrors](assets/test.pdf)
 
 Cognitive Mirrors investigates the **functional diversity of attention heads** in large language models (LLMs).
 
