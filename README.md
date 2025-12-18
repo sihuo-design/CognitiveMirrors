@@ -1,30 +1,65 @@
-# CognitiveMirrors
-The official code of "Cognitive Mirrors: Exploring the Diverse Functional Roles of Attention Heads in LLM Reasoning".
+# Cognitive Mirrors
 
-<img src="https://github.com/user-attachments/assets/3d45c7a8-c60f-4e17-9f23-882e008650ab" width="40">
-Cognitive Mirrors investigates the functional diversity of attention heads in large language models (LLMs).
+**Cognitive Mirrors** is the official codebase for **“Cognitive Mirrors: Exploring the Diverse Functional Roles of Attention Heads in LLM Reasoning.”**
 
-1. Environment Setup
+![Overview of Cognitive Mirrors](assets/overview.png)
 
-2. Get Head Activations
+Cognitive Mirrors investigates the **functional diversity of attention heads** in large language models (LLMs).
 
-Run python get_activations.py --mode train 
+---
 
-Run python get_activations.py --mode test
+## Environment Setup
 
-3. Probing
+Create and activate the environment (example with Conda):
 
-Run python get_topk_tokens_by_answer.py to get the activations of top-k meaningful tokens from generated answer.
+```bash
+conda create -n cognitive_mirrors python=3.8
+conda activate cognitive_mirrors
+pip install -r requirements.txt
+```
 
-Run python get_importance.py
+## Get Head Activations
 
-4. Experiments
+```bash
+python get_activations.py --mode train 
 
-Run python ablation_topk.py to validate Functional Contributions of Cognitive Heads (Table 1 in paper).
+python get_activations.py --mode test
+```
 
-Run python ablation_cot.py for Hierarchical structure exploration (Table 3 in paper).
+## Probing
 
-Run python ablation_task_mask.py for Negative Intervention.
+```bash
+python get_topk_tokens_by_answer.py
+```
+to get the activations of top-k meaningful tokens from generated answer.
 
-Run python ablation_task_recorrect.py for Positive Intervention.
+Compute head importance
+```bash
+python get_importance.py
+```
 
+## Experiments
+
+**Functional Contributions of Cognitive Heads (Table 1)**
+
+```bash
+python ablation_topk.py
+```
+
+**Hierarchical Structure Exploration (Table 3)**
+
+```bash
+python ablation_cot.py
+```
+
+**Negative Intervention**
+
+```bash
+python ablation_task_mask.py
+```
+
+**Positive Intervention**
+
+```bash
+python ablation_task_recorrect.py
+```
